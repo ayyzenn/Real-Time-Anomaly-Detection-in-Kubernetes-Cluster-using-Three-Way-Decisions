@@ -1,0 +1,4 @@
+sudo kubectl edit configmap prometheus-server -n default
+
+sudo kubectl get svc
+

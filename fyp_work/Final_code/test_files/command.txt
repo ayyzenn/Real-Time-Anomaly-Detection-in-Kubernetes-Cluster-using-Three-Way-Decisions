@@ -1,0 +1,14 @@
+Save the script: Copy the script into a file, for example, locust_loop.sh.
+Make it executable: Run chmod +x locust_loop.sh to make the script executable.
+Run the script: Execute the script by typing ./locust_loop.sh in your terminal.
+
+
+ps aux | grep locust_test.sh
+kill PID
+
+nohup ./filename = save the terminal record into the file 
+
+
+for limitng the resources.
+kubectl edit deployment front-end -n sock-shop
+
