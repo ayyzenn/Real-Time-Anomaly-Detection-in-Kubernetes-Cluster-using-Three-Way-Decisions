@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/main-panel.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<header class="header">
+    <h1>Real Time Anomaly Detector</h1>
+</header>
+
+<nav class="sidebar">
+
+    
+    <div class="sidebar-link">
+        <img style="padding-right:3px ;" src="icons/speed-4.svg" />
+       <a  href="index.html">Dashboard</a> 
+    </div>
+    <hr/>
+
+    <div style="padding-right: 46px;" class="sidebar-link ">
+
+        <img style="height: 34px;" src="icons/pods6.svg" />
+        <a   id="pods-dropdown" >Pods  <i class="fa fa-caret-down"></i> </a>
+
+    </div>
+    
+
+    <div class="dropdown-container">
+        <a href="frontend.html">&#8226; Frontend Pod</a>
+        <a href="user.html">&#8226; User Pod</a>
+       
+    </div>
+    <hr/>
+
+
+    <div style="padding-right: 46px;" class="sidebar-link">
+        <img style="height: 32px;" src="icons/alerts3.svg" />
+        <a  href="alerts.html">Alerts</a>
+    </div>
+    <hr/>
+
+    <div style="padding-right: 34px;" class="sidebar-link">
+        <img style="padding-right:5px ;" src="icons/setting.svg" />
+        <a href="settings.html">Settings</a>
+    </div>
+    <hr/>
+
+    <div  style="padding-right: 39px;" class="sidebar-link">
+        <img style="padding-right:5px ;" src="icons/logout.svg" />
+        <a  href="login.html">Logout</a>
+    </div>
+    </nav>
+
+
+    <div class="main-panel">
+
+        
+            <div id="container"></div>
+
+            <div id="container1"></div>
+
+</div>
+
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        const dropdownBtn = document.getElementById('pods-dropdown');
+        const dropdownContainer = document.querySelector('.dropdown-container');
+        
+        dropdownBtn.addEventListener('click', () => {
+          dropdownContainer.classList.toggle('show');
+        });
+    </script>
+
+<script src="scripts/frontend-cpu-usage.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="scripts/frontend-memory-usage.js"></script>
+
+
+</body>
+<footer></footer>
+</html>
+
