@@ -1,5 +1,0 @@
-sock shop access on url: http://<minikube IP>:30001/
-prometheus url: http://<minikube IP>:31090/
-grafana url: http://<minikube IP>:31300/
-username: admin
-password: admin
