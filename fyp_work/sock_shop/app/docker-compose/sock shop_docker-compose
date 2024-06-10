@@ -1,5 +1,0 @@
-sudo docker-compose -f app/docker-compose/docker-compose.yml up -d && sudo docker-compose -f ./app/docker-compose/docker-compose.monitoring.yml up -d
-
-sudo docker-compose -f app/docker-compose/docker-compose.yml down && sudo docker-compose -f ./app/docker-compose/docker-compose.monitoring.yml down
-
-
