@@ -1,0 +1,9 @@
+sudo helm list
+sudo helm uninstall prometheus -n default
+sudo kubectl delete service prometheus-server-ext -n default
+
+
+sudo helm list
+sudo helm uninstall grafana -n default
+sudo kubectl delete service grafana-ext -n default
+

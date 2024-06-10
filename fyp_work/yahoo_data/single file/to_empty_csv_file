@@ -1,0 +1,16 @@
+import csv
+
+# Open the CSV file in read mode
+with open('frontend_cpu_result.csv', 'r') as infile:
+    # Read the CSV file
+    reader = csv.reader(infile)
+    # Get the header
+    header = next(reader)
+    # Close the file
+
+# Open the CSV file in write mode
+with open('frontend_cpu_result.csv', 'w', newline='') as outfile:
+    # Write the header back to the file
+    writer = csv.writer(outfile)
+    writer.writerow(header)
+    # Close the file
